@@ -35,7 +35,7 @@ class PWM_DAC:
         self.pwm.ChangeDutyCycle(duty_cycle)
 
 try:
-    dac = pd.PWM_DAC()
+    dac = pd.PWM_DAC(12, 10000, 3.3, verbose = False)
     start_time = time.time()
 
     while True:
